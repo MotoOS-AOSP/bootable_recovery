@@ -556,6 +556,10 @@ GRRotation gr_get_rotation() {
   return rotation;
 }
 
+void gr_rotate_touch(GRRotation rot) {
+  touch_rotation = rot;
+}
+
 bool gr_has_multiple_connectors() {
   return gr_backend->HasMultipleConnectors();
 }
